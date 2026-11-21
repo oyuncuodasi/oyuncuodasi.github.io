@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oyun Odası – ücretsiz basit tarayıcı oyunları</title>
+<meta name="description" content="Telefonda ve bilgisayarda tarayıcıdan oynayabileceğin ücretsiz, basit ve hızlı oyunlar.">
+<meta property="og:title" content="Oyun Odası">
+<meta property="og:description" content="Ücretsiz, basit ve hızlı tarayıcı oyunları.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#141821">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23141821'/%3E%3Cpolygon points='6,14 9,5 14,12 18,12 23,5 26,14 26,26 6,26' fill='%23e08a2b'/%3E%3C/svg%3E">
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#141821;color:#f2efe6;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:720px;margin:0 auto;padding:0 16px}
+header{padding:20px 0 8px;display:flex;justify-content:space-between;align-items:center}
+.logo{font:700 20px/1 ui-monospace,"Courier New",monospace;letter-spacing:.5px;color:#e08a2b;text-decoration:none}
+nav a{color:#a7b0bf;text-decoration:none;margin-left:16px;font-size:15px}
+nav a:hover{color:#f2efe6}
+.hero{margin:16px 0 8px;border:2px solid #2f3a4d;overflow:hidden}
+.hero svg{display:block;width:100%;height:auto}
+h1{font:700 28px/1.2 ui-monospace,"Courier New",monospace;margin:20px 0 8px}
+h2{font:700 20px/1.3 ui-monospace,"Courier New",monospace;margin:32px 0 12px}
+.lead{color:#a7b0bf;margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{display:block;background:#1f2530;border:2px solid #2f3a4d;padding:16px;color:inherit;text-decoration:none;box-shadow:4px 4px 0 #000}
+a.card:hover{border-color:#e08a2b}
+.card h3{margin:0 0 4px;font-size:18px}
+.card p{margin:0;color:#a7b0bf;font-size:15px}
+.tag{display:inline-block;font:700 12px/1 ui-monospace,"Courier New",monospace;padding:4px 8px;margin-bottom:10px;background:#e08a2b;color:#141821}
+.soon .tag{background:#2f3a4d;color:#a7b0bf}
+footer{border-top:2px solid #2f3a4d;margin-top:40px;padding:20px 0;color:#a7b0bf;font-size:14px}
+.bgscroll{animation:bg 20s linear infinite}
+.road{animation:rd .8s linear infinite}
+.l1{transform-origin:170px 165px;animation:sw .4s ease-in-out infinite alternate}
+.l2{transform-origin:170px 165px;animation:sw .4s ease-in-out infinite alternate-reverse}
+.arm2{transform-origin:172px 102px;animation:sw .4s ease-in-out infinite alternate-reverse}
+.bob{animation:bb .4s ease-in-out infinite alternate}
+.tail{transform-origin:198px 124px;animation:tl .6s ease-in-out infinite alternate}
+@keyframes bg{to{transform:translateX(-380px)}}
+@keyframes rd{to{transform:translateX(-80px)}}
+@keyframes sw{from{transform:rotate(-28deg)}to{transform:rotate(28deg)}}
+@keyframes bb{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+@keyframes tl{from{transform:rotate(-14deg)}to{transform:rotate(16deg)}}
+@media (prefers-reduced-motion:reduce){.hero *{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<a class="logo" href="#">OYUN ODASI</a>
+<nav><a href="#oyunlar">Oyunlar</a><a href="#hakkinda">Hakkında</a></nav>
+</header>
+
+<main>
+<div class="hero">
+<svg viewBox="0 0 380 280" role="img" aria-label="Kucağında kedi taşıyan, sokakta yürüyen düşük poligonlu bir adam" xmlns="http://www.w3.org/2000/svg">
+<defs><pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.5" fill="#000" opacity="0.1"/></pattern></defs>
+<rect width="380" height="235" fill="#a9c1cf"/>
+<polygon points="300,40 322,30 344,40 344,62 322,72 300,62" fill="#f3e3a6"/>
+<g class="bgscroll">
+<g fill="#6f7f93">
+<polygon points="10,235 10,140 40,128 70,140 70,235"/>
+<polygon points="90,235 90,110 130,98 130,235"/>
+<polygon points="150,235 150,150 190,135 230,150 230,235"/>
+<polygon points="250,235 250,120 290,108 290,235"/>
+<polygon points="310,235 310,155 340,145 370,155 370,235"/>
+</g>
+<g fill="#4f5d70">
+<rect x="22" y="160" width="10" height="10"/><rect x="48" y="160" width="10" height="10"/>
+<rect x="100" y="130" width="10" height="10"/><rect x="100" y="165" width="10" height="10"/>
+<rect x="165" y="170" width="10" height="10"/><rect x="195" y="170" width="10" height="10"/>
+<rect x="262" y="140" width="10" height="10"/><rect x="262" y="175" width="10" height="10"/>
+<rect x="322" y="175" width="10" height="10"/>
+</g>
+<g transform="translate(380,0)">
+<g fill="#6f7f93">
+<polygon points="10,235 10,140 40,128 70,140 70,235"/>
+<polygon points="90,235 90,110 130,98 130,235"/>
+<polygon points="150,235 150,150 190,135 230,150 230,235"/>
+<polygon points="250,235 250,120 290,108 290,235"/>
+<polygon points="310,235 310,155 340,145 370,155 370,235"/>
+</g>
+<g fill="#4f5d70">
+<rect x="22" y="160" width="10" height="10"/><rect x="48" y="160" width="10" height="10"/>
+<rect x="100" y="130" width="10" height="10"/><rect x="100" y="165" width="10" height="10"/>
+<rect x="165" y="170" width="10" height="10"/><rect x="195" y="170" width="10" height="10"/>
+<rect x="262" y="140" width="10" height="10"/><rect x="262" y="175" width="10" height="10"/>
+<rect x="322" y="175" width="10" height="10"/>
+</g>
+</g>
+</g>
+<rect y="235" width="380" height="45" fill="#4a4a52"/>
+<rect y="235" width="380" height="4" fill="#8d8d96"/>
+<g class="road" fill="#d8d29a">
+<rect x="0" y="258" width="40" height="4"/><rect x="80" y="258" width="40" height="4"/><rect x="160" y="258" width="40" height="4"/><rect x="240" y="258" width="40" height="4"/><rect x="320" y="258" width="40" height="4"/><rect x="400" y="258" width="40" height="4"/>
+</g>
+<ellipse cx="172" cy="240" rx="42" ry="5" fill="#000" opacity="0.25"/>
+<g class="l2">
+<polygon points="162,165 178,165 175,230 160,230" fill="#20232d"/>
+<polygon points="157,230 182,230 184,238 157,238" fill="#0d0d10"/>
+</g>
+<g class="arm2">
+<polygon points="166,100 178,100 176,138 167,138" fill="#2f4a74"/>
+<polygon points="167,138 176,138 175,148 168,148" fill="#e0ac8a"/>
+</g>
+<g class="l1">
+<polygon points="162,165 178,165 177,230 162,230" fill="#2c2f3a"/>
+<polygon points="158,230 184,230 187,238 158,238" fill="#111"/>
+</g>
+<g class="bob">
+<polygon points="152,100 188,100 190,168 150,168" fill="#3b5b8c"/>
+<polygon points="152,100 170,100 170,168 150,168" fill="#34527e"/>
+<polygon points="162,86 178,86 176,100 164,100" fill="#e0ac8a"/>
+<polygon points="156,76 160,62 172,58 184,62 186,76 182,90 160,90" fill="#e0ac8a"/>
+<polygon points="156,70 160,58 172,54 186,60 188,70 176,64 164,66" fill="#3a2a1e"/>
+<rect x="177" y="73" width="3" height="4" fill="#111"/>
+<polygon points="184,78 190,81 184,83" fill="#cf9877"/>
+<g class="tail"><polygon points="198,124 190,110 186,116 194,130" fill="#b8651a"/></g>
+<polygon points="198,112 226,112 232,132 196,134" fill="#e08a2b"/>
+<polygon points="206,112 210,112 212,134 208,134" fill="#b8651a"/>
+<polygon points="216,112 220,112 222,133 218,133" fill="#b8651a"/>
+<polygon points="222,98 242,98 245,114 224,116" fill="#e08a2b"/>
+<polygon points="222,98 226,87 232,98" fill="#e08a2b"/>
+<polygon points="236,98 242,87 245,100" fill="#e08a2b"/>
+<rect x="230" y="104" width="3" height="4" fill="#1f1a10"/>
+<rect x="238" y="104" width="3" height="4" fill="#1f1a10"/>
+<polygon points="176,100 186,104 212,128 204,138" fill="#3b5b8c"/>
+<polygon points="204,134 214,128 218,136 208,142" fill="#e0ac8a"/>
+</g>
+<rect width="380" height="280" fill="url(#scan)"/>
+</svg>
+</div>
+
+<h1>Basit oyunlar, ücretsiz</h1>
+<p class="lead">Kurulum yok, üyelik yok. Telefonundan ya da bilgisayarından tarayıcıyı açıp hemen oyna.</p>
+
+<h2 id="oyunlar">Oyunlar</h2>
+<div class="grid">
+<!-- Oyun hazır olunca bu div'i şöyle değiştir: <a class="card" href="games/kedi.html"> ... </a> ve "Yakında" etiketini "Oyna" yap, "soon" sınıfını sil. -->
+<div class="card soon">
+<span class="tag">YAKINDA</span>
+<h3>Kedi yakala</h3>
+<p>Gökten düşen kedileri yakala. Telefonda sürükle, bilgisayarda ok tuşlarıyla oyna.</p>
+</div>
+<div class="card soon">
+<span class="tag">YAKINDA</span>
+<h3>Yeni oyunlar yolda</h3>
+<p>Buraya yeni oyunlar eklenecek. Sık sık uğra.</p>
+</div>
+</div>
+
+<h2 id="hakkinda">Hakkında</h2>
+<p class="lead">Oyun Odası, küçük ve hızlı oyunların toplandığı bir site. Hepsi ücretsiz, tarayıcıdan oynanıyor ve telefonda rahat çalışıyor.</p>
+</main>
+
+<footer>© 2026 Oyun Odası</footer>
+</div>
+</body>
+</html>
